@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlGasto"
+    tools:context="com.aguiberteaut.bancofinal.fragmentos.GastoFragment">
+
+
+    <TextView
+        android:text="Registro de Gasto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:id="@+id/tvRegGasto" />
+
+    <TextView
+        android:text="Cantidad:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:id="@+id/tvCantidad"
+        android:layout_below="@+id/tvRegGasto"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="33dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:text="Concepto:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCantidad"
+        android:layout_alignEnd="@+id/tvCantidad"
+        android:layout_marginTop="33dp"
+        android:id="@+id/tvConcepto"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etConceptoGasto"
+        android:hint="Introduce concepto"
+        android:layout_alignBaseline="@+id/tvConcepto"
+        android:layout_alignBottom="@+id/tvConcepto"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etCantidadGasto"
+        android:hint="Introduce cantidad"
+        android:layout_alignBaseline="@+id/tvCantidad"
+        android:layout_alignBottom="@+id/tvCantidad"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Gasto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etConceptoGasto"
+        android:layout_toStartOf="@+id/etConceptoGasto"
+        android:layout_marginTop="68dp"
+        android:id="@+id/btGasto" />
+
+    <Button
+        android:text="Limpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btLimpiarGast"
+        android:layout_alignBaseline="@+id/btGasto"
+        android:layout_alignBottom="@+id/btGasto"
+        android:layout_toEndOf="@+id/tvRegGasto" />
+</RelativeLayout>

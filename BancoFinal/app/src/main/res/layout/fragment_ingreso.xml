@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aguiberteaut.bancofinal.fragmentos.IngresoFragment">
+
+
+    <Button
+        android:text="Limpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnIngreso"
+        android:layout_toEndOf="@+id/btnIngreso"
+        android:layout_marginStart="30dp"
+        android:id="@+id/btnLimpiarIng" />
+
+    <Button
+        android:text="Ingreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnIngreso"
+        style="@style/Widget.AppCompat.Light.ActionBar.Solid"
+        android:layout_marginStart="67dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/tvConcepto" />
+
+    <TextView
+        android:text="Concepto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:id="@+id/tvConcepto"
+        android:layout_below="@+id/tvCantidad"
+        android:layout_alignStart="@+id/tvCantidad" />
+
+    <TextView
+        android:text="Cantidad a Ingresar:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="72dp"
+        android:id="@+id/tvCantidad"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Registro de Ingreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:id="@+id/tvRegIngreso" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etCantidad"
+        android:hint="Introduce cantidad"
+        android:layout_alignTop="@+id/tvCantidad"
+        android:layout_toEndOf="@+id/btnIngreso" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etConcepto"
+        android:hint="Introduce Concepto"
+        android:layout_alignTop="@+id/tvConcepto"
+        android:layout_toEndOf="@+id/btnIngreso" />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/CrearIngreso"
+            android:title="Ingreso" />
+        <item
+            android:id="@+id/CrearGasto"
+            android:title="Gasto" />
+        <item
+            android:id="@+id/ListaIngresos"
+            android:title="Listado de ingresos" />
+        <item
+            android:id="@+id/ListaGastos"
+            android:title="Listado de gastos" />
+        <item
+            android:id="@+id/ListadoTotal"
+            android:title="Listado Total" />
+
+        <item
+            android:id="@+id/CerrarSesion"
+            android:title="Cerrar Sesion"/>
+
+        <item
+            android:id="@+id/Salir"
+            android:title="Salir" />
+
+
+    </group>
+
+</menu>

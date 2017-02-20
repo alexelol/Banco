@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aguiberteaut.bancofinal.fragmentos.RegistroFragment">
+
+
+    <TextView
+        android:text="Registro de Usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:id="@+id/tvRegistro" />
+
+    <TextView
+        android:text="Usuario:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="73dp"
+        android:id="@+id/tvUSuario"
+        android:layout_below="@+id/tvRegistro"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etUSuario"
+        android:layout_alignBaseline="@+id/tvUSuario"
+        android:layout_alignBottom="@+id/tvUSuario"
+        android:layout_alignParentEnd="true"
+        android:hint="Introduce Usuario" />
+
+    <TextView
+        android:text="Contraseña:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etUSuario"
+        android:layout_alignStart="@+id/tvUSuario"
+        android:layout_marginTop="29dp"
+        android:id="@+id/tvContraseña" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etContraseña"
+        android:layout_alignBaseline="@+id/tvContraseña"
+        android:layout_alignBottom="@+id/tvContraseña"
+        android:layout_alignParentEnd="true"
+        android:hint="Introduce contraseña"
+        android:layout_alignStart="@+id/btAtras" />
+
+    <Button
+        android:text="Limpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btRegistro"
+        android:layout_toEndOf="@+id/btRegistro"
+        android:layout_marginStart="37dp"
+        android:id="@+id/btLimpiarReg" />
+
+    <Button
+        android:text="Atras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btRegistro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:id="@+id/btAtras" />
+
+    <Button
+        android:text="Registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="77dp"
+        android:id="@+id/btRegistro"
+        android:layout_below="@+id/etContraseña"
+        android:layout_toStartOf="@+id/etUSuario" />
+</RelativeLayout>
